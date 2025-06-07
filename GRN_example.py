@@ -46,7 +46,7 @@ class GatedResidualNetwork(tf.keras.layers.Layer):
         else:
             x_context = x
 
-        #------------ Residual block ------------------------
+        #------------ GRN block ------------------------
         x1 = self.dense1(x_context)
         x1 = self.elu(x1)
         x1 = self.dense2(x1)
