@@ -26,7 +26,7 @@ class GatedResidualNetwork(tf.keras.layers.Layer):
 
         self.skip_dense = None  # Will be defined in build()
 
-    # build is called when you run 
+    # build function gets called automatically when you train.
     def build(self, input_shape):
         super(GatedResidualNetwork, self).build(input_shape) # may or may not needed here.
 
